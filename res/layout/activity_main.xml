@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+    
+    
+
+<ImageButton android:id="@+id/BtnBoton3"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:contentDescription="@string/icono_ok"
+android:src="@drawable/ok" />
+
+<ToggleButton
+    android:id="@+id/BtnBoton2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/BtnBoton3"
+    android:layout_below="@+id/BtnBoton3"
+    android:layout_marginTop="16dp"
+    android:textOff="@string/off"
+    android:textOn="@string/on" />
+
+
+
+<Button
+    android:id="@+id/BtnBoton1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/BtnBoton2"
+    android:layout_alignBottom="@+id/BtnBoton2"
+    android:layout_marginLeft="20dp"
+    android:layout_toRightOf="@+id/BtnBoton3"
+    android:text="@string/pulsame" />
+
+<ToggleButton
+    android:id="@+id/BtnBoton4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_below="@+id/BtnBoton1"
+    android:background="@drawable/toggle_style"
+    android:padding="10dip"
+    android:textOff="@string/off"
+    android:textOn="@string/on" />
+
+<Button
+    android:id="@+id/BtnBoton5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/BtnBoton1"
+    android:layout_alignLeft="@+id/BtnBoton1"
+    android:drawableLeft="@drawable/ok"
+    android:text="@string/pulsame" />
+
+<TextView
+    android:id="@+id/resultat"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_alignRight="@+id/BtnBoton2"
+    android:text="TextView" />
+
+</RelativeLayout>
